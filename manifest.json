@@ -1,0 +1,21 @@
+{
+  "name": "Kontify APP",
+  "short_name": "Kontify",
+  "start_url": "./index.php",
+  "display": "standalone",
+  "background_color": "#F6F8FA",
+  "theme_color": "#FFFFFF",
+  "description": "Sistema de gestión administrativa, fiscal y escaneo para contadores venezolanos",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
