@@ -1,0 +1,60 @@
+# ====================================================================
+# KONTIFY APP - GITIGNORE
+# Reglas de exclusión para control de versiones y seguridad
+# ====================================================================
+
+# 1. Variables de Entorno y Credenciales Sensibles
+.env
+.env.local
+.env.*.local
+*.env
+
+# 2. Bases de Datos Locales y Dumps
+*.sqlite
+*.sqlite3
+*.db
+kontify_local.sqlite
+*.sql.gz
+*.sql.bak
+dump.sql
+
+# 3. Archivos Subidos por Usuarios y Almacenamiento
+uploads/*
+!uploads/.gitkeep
+assets/uploads/*
+storage/logs/*
+storage/temp/*
+
+# 4. Logs del Servidor y PHP
+*.log
+error_log
+error_log.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 5. Dependencias (si se usan paquetes Composer / NPM)
+/vendor/
+/node_modules/
+
+# 6. IDEs y Editores de Código
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# 7. Archivos Ocultos del Sistema Operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
