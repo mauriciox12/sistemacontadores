@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+    <defs>
+        <linearGradient id="kg1" x1="20" y1="15" x2="48" y2="105" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#00D2A4"/>
+            <stop offset="60%" stop-color="#00B894"/>
+            <stop offset="100%" stop-color="#008F72"/>
+        </linearGradient>
+        <linearGradient id="kg2" x1="40" y1="20" x2="105" y2="60" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#00E5B4"/>
+            <stop offset="100%" stop-color="#00B894"/>
+        </linearGradient>
+        <linearGradient id="kg3" x1="42" y1="60" x2="105" y2="105" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#00B894"/>
+            <stop offset="100%" stop-color="#007A60"/>
+        </linearGradient>
+        <filter id="kshadow" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#008F72" flood-opacity="0.25"/>
+        </filter>
+    </defs>
+    <!-- Background tile (optional, transparent by default) -->
+    <g filter="url(#kshadow)">
+        <!-- Vertical Bar of K -->
+        <path d="M22 22C22 17.5817 25.5817 14 30 14H38C42.4183 14 46 17.5817 46 22V98C46 102.418 42.4183 106 38 106H30C25.5817 106 22 102.418 22 98V22Z" fill="url(#kg1)"/>
+        
+        <!-- Top Diagonal Arm of K -->
+        <path d="M42 58L78.5 21C81.8 17.7 87.2 17.7 90.5 21L95.5 26C98.8 29.3 98.8 34.7 95.5 38L66 68L42 58Z" fill="url(#kg2)"/>
+        
+        <!-- Bottom Diagonal Arm of K (Folded Ribbon with Overlap) -->
+        <path d="M48 62L62 48L95.5 82C98.8 85.3 98.8 90.7 95.5 94L90.5 99C87.2 102.3 81.8 102.3 78.5 99L48 62Z" fill="url(#kg3)"/>
+        
+        <!-- Shading joint fold -->
+        <path d="M46 54L62 48L66 68L46 72V54Z" fill="#006C54" fill-opacity="0.25"/>
+    </g>
+</svg>
