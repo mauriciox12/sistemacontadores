@@ -1,0 +1,19 @@
+# ====================================================================
+# KONTIFY DESPACHO - Configuración Apache para XAMPP y Namecheap
+# ====================================================================
+
+Options -Indexes
+DirectoryIndex index.php index.html
+
+# Ajuste de límites para subida de comprobantes y fotos de alta resolución
+<IfModule mod_php.c>
+    php_value upload_max_filesize 20M
+    php_value post_max_size 25M
+    php_value memory_limit 128M
+    php_value max_execution_time 120
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+</IfModule>
